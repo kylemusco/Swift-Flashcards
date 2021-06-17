@@ -11,6 +11,12 @@
 		551CD41E266C374000A5D1DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551CD41D266C374000A5D1DC /* ContentView.swift */; };
 		551CD420266C374200A5D1DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551CD41F266C374200A5D1DC /* Assets.xcassets */; };
 		551CD423266C374200A5D1DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551CD422266C374200A5D1DC /* Preview Assets.xcassets */; };
+		551CD430266C37CF00A5D1DC /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551CD42F266C37CF00A5D1DC /* Card.swift */; };
+		551CD434266C386A00A5D1DC /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551CD433266C386A00A5D1DC /* CardController.swift */; };
+		551CD438266C38B300A5D1DC /* Cards.plist in Resources */ = {isa = PBXBuildFile; fileRef = 551CD437266C38B300A5D1DC /* Cards.plist */; };
+		551CD43B266C3B1F00A5D1DC /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551CD43A266C3B1F00A5D1DC /* CardViewModel.swift */; };
+		551CD440266C408700A5D1DC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551CD43F266C408700A5D1DC /* CardView.swift */; };
+		551CD44326758C2100A5D1DC /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551CD44226758C2100A5D1DC /* AnswerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		551CD41F266C374200A5D1DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		551CD422266C374200A5D1DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		551CD424266C374200A5D1DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		551CD42F266C37CF00A5D1DC /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		551CD433266C386A00A5D1DC /* CardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
+		551CD437266C38B300A5D1DC /* Cards.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Cards.plist; sourceTree = "<group>"; };
+		551CD43A266C3B1F00A5D1DC /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		551CD43F266C408700A5D1DC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		551CD44226758C2100A5D1DC /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +64,12 @@
 		551CD41A266C374000A5D1DC /* Swift Flashcards */ = {
 			isa = PBXGroup;
 			children = (
+				551CD432266C382100A5D1DC /* Controllers */,
+				551CD42D266C376B00A5D1DC /* Models */,
+				551CD42C266C376300A5D1DC /* ViewModels */,
+				551CD42B266C375600A5D1DC /* Views */,
+				551CD436266C389F00A5D1DC /* Resources */,
 				551CD41B266C374000A5D1DC /* Swift_FlashcardsApp.swift */,
-				551CD41D266C374000A5D1DC /* ContentView.swift */,
 				551CD41F266C374200A5D1DC /* Assets.xcassets */,
 				551CD424266C374200A5D1DC /* Info.plist */,
 				551CD421266C374200A5D1DC /* Preview Content */,
@@ -67,6 +83,48 @@
 				551CD422266C374200A5D1DC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		551CD42B266C375600A5D1DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				551CD41D266C374000A5D1DC /* ContentView.swift */,
+				551CD43F266C408700A5D1DC /* CardView.swift */,
+				551CD44226758C2100A5D1DC /* AnswerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		551CD42C266C376300A5D1DC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				551CD43A266C3B1F00A5D1DC /* CardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		551CD42D266C376B00A5D1DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				551CD42F266C37CF00A5D1DC /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		551CD432266C382100A5D1DC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				551CD433266C386A00A5D1DC /* CardController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		551CD436266C389F00A5D1DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				551CD437266C38B300A5D1DC /* Cards.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				551CD438266C38B300A5D1DC /* Cards.plist in Resources */,
 				551CD423266C374200A5D1DC /* Preview Assets.xcassets in Resources */,
 				551CD420266C374200A5D1DC /* Assets.xcassets in Resources */,
 			);
@@ -139,7 +198,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				551CD41E266C374000A5D1DC /* ContentView.swift in Sources */,
+				551CD434266C386A00A5D1DC /* CardController.swift in Sources */,
+				551CD44326758C2100A5D1DC /* AnswerView.swift in Sources */,
+				551CD430266C37CF00A5D1DC /* Card.swift in Sources */,
 				551CD41C266C374000A5D1DC /* Swift_FlashcardsApp.swift in Sources */,
+				551CD440266C408700A5D1DC /* CardView.swift in Sources */,
+				551CD43B266C3B1F00A5D1DC /* CardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
