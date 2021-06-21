@@ -9,6 +9,7 @@ import Foundation
 
 class Card {
     enum Category: String {
+        case Accessibility
         case Database
         case Debugging
         case DesignPattern

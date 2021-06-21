@@ -423,5 +423,49 @@ Although it is allowed to have multiple managed object contexts, there is typica
 		<key>category</key>
 		<string>Database</string>
 	</dict>
+	<dict>
+		<key>question</key>
+		<string>What is Dynamic Type?</string>
+		<key>answer</key>
+		<string>Dynamic Type is a way of allowing the user to adjust their preferred size for all fonts in all apps</string>
+		<key>category</key>
+		<string>Accessibility</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>What does the Codable protocol do?</string>
+		<key>answer</key>
+		<string>This protocol was introduced in Swift 4 to let us quickly and safely convert custom Swift types to and from JSON, XML, and similar</string>
+		<key>category</key>
+		<string>Swift</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>What is Polymorphism?</string>
+		<key>answer</key>
+		<string>Polymorphism is about provisioning a single interface to entities of different types. This can be done in Swift by defining a Protocol that classes need to adhere to or through subclassing</string>
+		<key>category</key>
+		<string>General</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>How does the hitTest method work?</string>
+		<key>answer</key>
+		<string>This method traverses the view hierarchy by calling the point(inside:with:) method of each subview to determine which subview should receive a touch event. If point(inside:with:) returns true, then the subview’s hierarchy is similarly traversed until the frontmost view containing the specified point is found. If a view does not contain the point, its branch of the view hierarchy is ignored. You rarely need to call this method yourself, but you might override it to hide touch events from subviews.
+
+This method ignores view objects that are hidden, that have disabled user interactions, or have an alpha level less than 0.01. This method does not take the view’s content into account when determining a hit. Thus, a view can still be returned even if the specified point is in a transparent portion of that view’s content.
+
+Points that lie outside the receiver’s bounds are never reported as hits, even if they actually lie within one of the receiver’s subviews. This can occur if the current view’s clipsToBounds property is set to false and the affected subview extends beyond the view’s bounds.</string>
+		<key>category</key>
+		<string>UIKit</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>What is a superview?</string>
+		<key>answer</key>
+		<string>The superview is the immediate parent of the current view. The value of this property is nil when the view is not installed in a view hierarchy.</string>
+		<key>category</key>
+		<string>UIKit</string>
+	</dict>
 </array>
 </plist>
