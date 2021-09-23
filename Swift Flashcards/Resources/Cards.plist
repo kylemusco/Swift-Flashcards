@@ -427,7 +427,7 @@ Although it is allowed to have multiple managed object contexts, there is typica
 		<key>question</key>
 		<string>What is Dynamic Type?</string>
 		<key>answer</key>
-		<string>Dynamic Type is a way of allowing the user to adjust their preferred size for all fonts in all apps</string>
+		<string>Dynamic Type allows the user to adjust their preferred size for fonts in all apps</string>
 		<key>category</key>
 		<string>Accessibility</string>
 	</dict>
@@ -466,6 +466,24 @@ Points that lie outside the receiver’s bounds are never reported as hits, even
 		<string>The superview is the immediate parent of the current view. The value of this property is nil when the view is not installed in a view hierarchy.</string>
 		<key>category</key>
 		<string>UIKit</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>What is KVC?</string>
+		<key>answer</key>
+		<string>Key-value coding is a mechanism enabled by the NSKeyValueCoding informal protocol that objects adopt to provide indirect access to their properties. When an object is key-value coding compliant, its properties are addressable via string parameters through a concise, uniform messaging interface. This indirect access mechanism supplements the direct access afforded by instance variables and their associated accessor methods.</string>
+		<key>category</key>
+		<string>General</string>
+	</dict>
+	<dict>
+		<key>question</key>
+		<string>What is Dyanmic Dispatch?</string>
+		<key>answer</key>
+		<string>A mechanism of the Objective C runtime where it decides at runtime which implementation of a method should be invoked. 
+
+For example, if a subclass overrides a method of its superclass, dynamic dispatch figures out which implementation of the method needs to be invoked, that of the subclass or that of the parent class</string>
+		<key>category</key>
+		<string>ObjectiveC</string>
 	</dict>
 </array>
 </plist>
